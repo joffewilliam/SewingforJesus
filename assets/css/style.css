@@ -8,7 +8,7 @@
   --muted:#5f5f5f;
   --bg:#fbfbfc;
   --card:#ffffff;
-  --header-bg:#2c2c2c; /* dark header for contrast */
+  --header-bg:hsl(289, 100%, 12%); /* dark header for contrast */
   --text-light:#f9f9f9;
   --max-width:1100px;
 }
