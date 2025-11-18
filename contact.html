@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#9c2d45" />
+  <title>Contact — Sewing For Jesus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand-left">
+      <div class="logo-container">
+        <img src="/assets/logo.png" alt="Sewing For Jesus" class="logo" />
+        <span class="logo-text">Sewing for Jesus</span>
+      </div>
+      <div class="page-title">Contact</div>
+    </div>
+
+    <div class="wrap">
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="page-title-mobile">Contact</div>
+      <nav id="site-nav">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/donations.html">Donations</a>
+        <a href="/photos.html">Photos</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <div class="brand-right">
+        <img src="/assets/logo.png" alt="Sewing For Jesus" class="logo logo-right" />
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap main-grid">
+    <section class="hero">
+      <h2>Contact Sewing For Jesus</h2>
+      <p>If you'd like to ask a question, join our sewing group, or donate fabric or supplies, please use the contact form below and we'll get back to you as soon as we can.</p>
+
+      <!-- Form embedded in the pink hero area -->
+      <form id="contact-form" class="contact-form" method="POST" action="https://api.web3forms.com/submit">
+        <!-- required web3forms access key (provided) -->
+        <input type="hidden" name="access_key" value="77013aac-1cca-4a14-9c21-b383b5b0199a">
+        <input type="hidden" name="subject" value="Website contact form">
+        <!-- honeypot for bots -->
+        <div style="display:none;visibility:hidden;">
+          <label>Leave this field empty<input type="text" name="botcheck" /></label>
+        </div>
+
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <p><button class="btn" type="submit">Send message</button></p>
+      </form>
+
+      <div id="contact-status" class="small muted" aria-live="polite" style="display:none;margin-top:.75rem"></div>
+    </section>
+
+    <aside class="widget">
+      <h3>Contact details</h3>
+      <p><strong>Bev Breece</strong><br />Evangel Baptist Church<br />16994 Telegraph Rd, Taylor, MI 48180</p>
+      <p>Phone: <a href="tel:734-308-7337">734-308-7337</a><br />Email: <a href="mailto:kbreece7@aol.com">kbreece7@aol.com</a></p>
+
+      <h3>Map</h3>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps?q=16994+Telegraph+Rd+Taylor+MI+48180&z=15&output=embed" width="100%" height="200" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year-contact"></span> Sewing For Jesus</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year-contact').textContent = new Date().getFullYear();</script>
+  <script src="/assets/js/nav.js" defer></script>
+  <script src="/assets/js/contact.js" defer></script>
+</body>
+</html>
