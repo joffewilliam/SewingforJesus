@@ -69,6 +69,15 @@ main{flex:0}
 .btn{display:inline-block;background:var(--accent);color:#fff;padding:.65rem 1rem;border-radius:8px;text-decoration:none;font-weight:700;box-shadow:0 8px 22px rgba(111,43,90,0.12);transition:transform .12s,background .12s}
 .btn:hover{transform:translateY(-2px);background:var(--accent-dark)}
 
+/* Join group button (image) styles */
+.join-group-link{display:inline-block;max-width:240px}
+.join-group-link img.join-group-img{display:block;width:100%;height:auto;border-radius:8px;box-shadow:0 6px 18px rgba(16,16,16,0.08);border:1px solid rgba(0,0,0,0.04)}
+.join-group-placeholder{display:inline-block}
+
+@media (max-width:640px){
+  .join-group-link{max-width:160px}
+}
+
 .contact-form{margin-top:1rem;display:block;max-width:700px}
 
 /* Make the form appear as a white card when embedded in the hero */
