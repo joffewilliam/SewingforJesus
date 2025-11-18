@@ -53,6 +53,17 @@ main{flex:0}
 .hero h2{font-family:'Merriweather', serif;color:var(--accent);margin-top:0}
 .hero p{margin:.5rem 0}
 
+/* Make headings in content sections use the same Merriweather purple style as the hero */
+.content h3{
+  font-family:'Merriweather', serif;
+  color:var(--accent);
+  margin-top:0.25rem;
+  margin-bottom:0.5rem;
+  font-size:1.15rem;
+}
+
+.content p{margin:.5rem 0}
+
 .widget{background:var(--card);padding:0.9rem;border-radius:10px;box-shadow:0 6px 18px rgba(16,16,16,0.04)}
 .mission blockquote{font-style:italic;color:var(--accent-dark);border-left:6px solid var(--accent-pink);padding-left:1rem;margin:1rem 0;background:linear-gradient(90deg, rgba(247,220,233,0.6), rgba(255,255,255,0));padding:.75rem;border-radius:6px}
 .testimonials .testimonial{margin-bottom:1rem;padding:0.5rem;background:#f9f9f9;border-radius:6px}
