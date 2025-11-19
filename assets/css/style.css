@@ -187,3 +187,32 @@ main{flex:0}
   .gallery{grid-template-columns:repeat(2,1fr)}
   .logo{height:52px}
 }
+
+/* Subtle background watermark of the logo (soft pink with drop shadow) */
+body::before{
+  content:"";
+  position:fixed;
+  left:50%;
+  top:140px;
+  transform:translateX(-50%);
+  width:420px;
+  height:420px;
+  background-image: linear-gradient(rgba(231,169,204,0.85), rgba(231,169,204,0.85)), url('../logo.png');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  background-blend-mode:overlay;
+  opacity:0.06;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.12));
+  pointer-events:none;
+  z-index:0;
+}
+
+/* Prevent the watermark from overlapping header and footer on small screens */
+@media (max-width:1000px){
+  body::before{width:280px;height:280px;top:120px;opacity:0.05}
+}
+
+@media (max-width:640px){
+  body::before{display:none}
+}
